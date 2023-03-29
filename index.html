@@ -23,98 +23,91 @@
       .hero {
         margin-bottom: 50px;
       }
-    
+
       .card:hover {
         transform: scale(1.05);
         transition: transform 0.3s ease-in-out;
       }
-    
+
       .card-img-top {
         width: 414px;
         height: 300px;
         object-fit: cover; /* 이미지 비율 유지 */
       }
-    
-      nav {
-        background-color: #333;
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 80px;
-        font-size: 18px;
+      .container-fluid {
+        background-color: rgb(243, 229, 79);
+        /* color: rgb(95, 96, 26); */
+        /* display: flex; */
+        /* justify-content: space-between; */
+        /* align-items: center; */
+        /* padding: 20px; */
       }
-    
-      nav ul {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        display: flex;
+      .navbar-brand {
+        font-size: 2rem;
       }
-    
-      nav li {
-        margin-right: 20px;
-      }
-    
-      nav li a {
-        display: block;
-        color: white;
-        text-align: center;
-        text-decoration: none;
-        transition: all 0.3s ease-in-out;
-      }
-    
-      nav li a:hover {
-        color: #f7df1e;
-      }
-    
       footer {
-        background-color: #f7df1e;
-        padding: 50px;
-        color: #333;
-        text-align: center;
-      }
-    
-      footer h4 {
-        margin-bottom: 30px;
-      }
-    
-      footer ul {
-        margin: 0;
-        padding: 0;
-        list-style: none;
+        background-color: #333;
+        color: #fff;
+        font-size: 1.2rem;
+        padding: 20px 0;
         display: flex;
-        justify-content: center;
+        flex-direction: column;
         align-items: center;
-        font-size: 14px;
-        margin-bottom: 20px;
       }
-    
-      footer li {
-        margin-right: 20px;
-      }
-    
-      footer a {
-        color: #333;
-        text-decoration: none;
-        transition: all 0.3s ease-in-out;
-      }
-    
-      footer a:hover {
-        color: #f7df1e;
+
+      .footer-info {
+        text-align: center;
+        font-size: 0.8rem;
       }
     </style>
-    
   </head>
 
   <body>
-    <nav>
-      <ul>
-        <li><a href="https://www.naver.com">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="https://www.naver.com/">
+          <img
+            src="https://img.icons8.com/plasticine/2x/sun.png"
+            width="70"
+            height="70"
+            alt=""
+          />
+          써니마켓
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">홈</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">상품</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">이벤트</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">고객센터</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">회원가입</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">로그인</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
 
     <div class="hero bg-dark text-center py-5">
@@ -126,7 +119,7 @@
         <div class="col-md-4 mb-4">
           <div class="card">
             <img
-              src="https://source.unsplash.com/1600x900/?rice-cooker"
+              src="https://source.unsplash.com/1600x900/?rice cooker"
               class="card-img-top"
               alt="전기밥솥"
             />
@@ -199,7 +192,8 @@
               <h5 class="card-title">중고 자전거</h5>
               <h6 class="card-subtitle mb-2 text-muted">5만원</h6>
               <p class="card-text">
-                출퇴근용으로 사용하던 중고 자전거 팝니다. 조금 낡은 감이 있지만 여전히 잘 타집니다.
+                출퇴근용으로 사용하던 중고 자전거 팝니다. 조금 낡은 감이 있지만
+                여전히 잘 타집니다.
               </p>
               <a
                 href="https://www.spartacodingclub.kr/"
@@ -220,7 +214,8 @@
               <h5 class="card-title">텀블러</h5>
               <h6 class="card-subtitle mb-2 text-muted">2만원</h6>
               <p class="card-text">
-                새 것과 차이 없이 깨끗한 텀블러 팝니다. 사용하지 않아서 판매합니다.
+                새 것과 차이 없이 깨끗한 텀블러 팝니다. 사용하지 않아서
+                판매합니다.
               </p>
               <a
                 href="https://www.spartacodingclub.kr/"
@@ -241,7 +236,8 @@
               <h5 class="card-title">냉장고</h5>
               <h6 class="card-subtitle mb-2 text-muted">3만원</h6>
               <p class="card-text">
-                깔끔한 디자인과 스테인리스 소재의 냉장고 팝니다. 내구성도 좋아요.
+                깔끔한 디자인과 스테인리스 소재의 냉장고 팝니다. 내구성도
+                좋아요.
               </p>
               <a
                 href="https://www.spartacodingclub.kr/"
@@ -261,9 +257,7 @@
             <div class="card-body">
               <h5 class="card-title">티셔츠</h5>
               <h6 class="card-subtitle mb-2 text-muted">15만원</h6>
-              <p class="card-text">
-                신축성 좋은 티셔츠 중고 팝니다.
-              </p>
+              <p class="card-text">신축성 좋은 티셔츠 중고 팝니다.</p>
               <a
                 href="https://www.spartacodingclub.kr/"
                 class="card-link stretched-link"
@@ -304,7 +298,7 @@
               <h5 class="card-title">전자레인지</h5>
               <h6 class="card-subtitle mb-2 text-muted">3만원</h6>
               <p class="card-text">
-                가정용 전자레인지입니다.사용하지 않아서 판매합니다. 
+                가정용 전자레인지입니다.사용하지 않아서 판매합니다.
               </p>
               <a
                 href="https://www.spartacodingclub.kr/"
@@ -362,37 +356,18 @@
               ></a>
             </div>
           </div>
-        </div>        
+        </div>
       </div>
     </div>
-    <footer class="footer">
+    <footer>
       <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <h4>연락처 정보</h4>
-            <p>전화번호: 02-123-4567</p>
-            <p>이메일: contact@example.com</p>
-            <p>주소: 서울시 강남구 역삼동 123-456</p>
-          </div>
-          <div class="col-md-4">
-            <h4>푸터 메뉴</h4>
-            <ul class="list-unstyled">
-              <li><a href="#">회사 소개</a></li>
-              <li><a href="#">이용약관</a></li>
-              <li><a href="#">개인정보 처리방침</a></li>
-              <li><a href="#">고객센터</a></li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <h4>회사 정보</h4>
-            <p>상호: 스파르타 코딩클럽</p>
-            <p>대표자: 김태훈</p>
-            <p>사업자등록번호: 123-45-67890</p>
-            <p>주소: 서울시 강남구 역삼동 123-456</p>
-          </div>
+        <div class="footer-info">
+          <p>Address: 123 Main Street, Anytown USA</p>
+          <p>Phone: 555-123-4567</p>
+          <p>Email: info@mywebsite.com</p>
+          <p>&copy; 2023 My Website. All Rights Reserved.</p>
         </div>
       </div>
     </footer>
-    
   </body>
 </html>
