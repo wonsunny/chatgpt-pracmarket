@@ -23,49 +23,88 @@
       .hero {
         margin-bottom: 50px;
       }
-
+    
       .card:hover {
         transform: scale(1.05);
         transition: transform 0.3s ease-in-out;
       }
-
+    
       .card-img-top {
         width: 414px;
         height: 300px;
         object-fit: cover; /* 이미지 비율 유지 */
       }
-
+    
       nav {
         background-color: #333;
         overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80px;
+        font-size: 18px;
       }
-
+    
       nav ul {
         margin: 0;
         padding: 0;
         list-style: none;
+        display: flex;
       }
-
+    
       nav li {
-        float: left;
+        margin-right: 20px;
       }
-
+    
       nav li a {
         display: block;
         color: white;
         text-align: center;
-        padding: 14px 16px;
         text-decoration: none;
+        transition: all 0.3s ease-in-out;
       }
-
+    
       nav li a:hover {
-        background-color: #111;
+        color: #f7df1e;
       }
-
+    
       footer {
-			padding-bottom: 50px;
-		}
+        background-color: #f7df1e;
+        padding: 50px;
+        color: #333;
+        text-align: center;
+      }
+    
+      footer h4 {
+        margin-bottom: 30px;
+      }
+    
+      footer ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        margin-bottom: 20px;
+      }
+    
+      footer li {
+        margin-right: 20px;
+      }
+    
+      footer a {
+        color: #333;
+        text-decoration: none;
+        transition: all 0.3s ease-in-out;
+      }
+    
+      footer a:hover {
+        color: #f7df1e;
+      }
     </style>
+    
   </head>
 
   <body>
@@ -326,8 +365,34 @@
         </div>        
       </div>
     </div>
-    <footer>
-      <!-- 하단 내용 -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h4>연락처 정보</h4>
+            <p>전화번호: 02-123-4567</p>
+            <p>이메일: contact@example.com</p>
+            <p>주소: 서울시 강남구 역삼동 123-456</p>
+          </div>
+          <div class="col-md-4">
+            <h4>푸터 메뉴</h4>
+            <ul class="list-unstyled">
+              <li><a href="#">회사 소개</a></li>
+              <li><a href="#">이용약관</a></li>
+              <li><a href="#">개인정보 처리방침</a></li>
+              <li><a href="#">고객센터</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h4>회사 정보</h4>
+            <p>상호: 스파르타 코딩클럽</p>
+            <p>대표자: 김태훈</p>
+            <p>사업자등록번호: 123-45-67890</p>
+            <p>주소: 서울시 강남구 역삼동 123-456</p>
+          </div>
+        </div>
+      </div>
     </footer>
+    
   </body>
 </html>
